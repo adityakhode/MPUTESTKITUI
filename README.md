@@ -24,5 +24,7 @@ libraries used in this application are
 
 *depending on your operating system the commands can change please search for it online*ire
 
-Directory Structure ![directory](https://github.com/adityakhode/MPUTESTKITUI/assets/113977001/258e708d-2368-41db-b26f-5de544325aee)
+Directory Structure 
+
+![directory](https://github.com/adityakhode/MPUTESTKITUI/assets/113977001/258e708d-2368-41db-b26f-5de544325aee)
 
