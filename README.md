@@ -14,14 +14,19 @@ warnings do not delete src folder , supportingDocx folder and main.py file
 libraries used in this application are 
 
     pip install webbrowser
+    
 
     pip install pandas
+    
 
     pip install sqlite3
+    
 
-    pip inatall qrcode
+    pip install qrcode
+    
 
-    pip inatall opencv-python
+    pip install opencv-python
+    
 
     pip install pillow
 
