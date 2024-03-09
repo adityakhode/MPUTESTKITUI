@@ -1,4 +1,5 @@
 TO GET STARTED WITH APP
+
 step 1 : run main.py to start the application
 
 step 2 : go to change database and select your edited exel file and save
