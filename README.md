@@ -23,7 +23,7 @@ libraries used in this application are
     pip install pillow
     pip install pyqt5
 
-*depending on your operating system the commands can change please search for it online*ire
+*depending on your operating system the commands can change please search for it online*
 
 Directory Structure 
 
