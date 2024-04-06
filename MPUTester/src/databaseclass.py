@@ -152,6 +152,7 @@ class DatabaseClass:
             self.cursor.execute(create_table_sql)
             self.connection.commit()
 
+
     # Function Name : saveResult
     # input         : (tCNo, tCDate, supplierCode, partyName, partName, partNumber, batchNumber,
     #                 challanQTY, challanNo, challanDate, calResistance, resistanceStatus,
@@ -241,10 +242,10 @@ class DatabaseClass:
     # example       : object.get_result_by_tcno()    
     def get_result_by_tcno(self, tc_no):
         desired_columns = (
-            "calResistance1", "resistanceStatus1", "calInductance1", "inductanceStatus1",
-            "calFrequency1", "frequencyStatus1", "calVoltage1", "voltageStatus1",
-            "calResistance2", "resistanceStatus2", "calInductance2", "inductanceStatus2",
-            "calFrequency2", "frequencyStatus2", "calVoltage2", "voltageStatus2"
+            "calResistance1", "resistanceStatus1", "calResistance2", "resistanceStatus2",
+            "calInductance1", "inductanceStatus1", "calInductance2", "inductanceStatus2",
+            "calVoltage1"   , "voltageStatus1"   , "calVoltage2"   , "voltageStatus2"   ,
+            "calFrequency1" , "frequencyStatus1" , "calFrequency2" , "frequencyStatus2"
         )
 
         query = f"SELECT {', '.join(desired_columns)} FROM result_database WHERE tCNo = ?"
@@ -255,4 +256,21 @@ class DatabaseClass:
             return list(result)  # Convert the fetched row to a list
         else:
             return None  # Indicate no record found
-
+        
+    # Function Name : doesDatabaseHasData
+    # input         : None
+    # Output        : string yes or no
+    # Logic         : checks if data is present in database
+    # example       : object.doesDatabaseHasData()       
+    def doesDatabaseHasData(self):
+        # Check for the existence of specific tables
+        self.cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='test_table'")
+        table1_exists = self.cursor.fetchone() is not None
+        # Check for data in specific tables
+        self.cursor.execute("SELECT COUNT(*) FROM test_table")
+        table1_data_count = self.cursor.fetchone()[0]
+        
+        if table1_data_count == 0:
+            return "No"
+        else:
+            "yes"
