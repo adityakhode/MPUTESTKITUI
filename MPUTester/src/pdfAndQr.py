@@ -30,8 +30,8 @@ class pdfAndQr:
 
         # Create a QR code with desired settings
         qr = qrcode.QRCode(
-            version=4,  # Adjust version for data size
-            box_size=10,  # Adjust box size for visual appeal
+            version=10,  # Adjust version for data size
+            box_size=5,  # Adjust box size for visual appeal
             border=4  
         )
         qr.add_data(image_url)
