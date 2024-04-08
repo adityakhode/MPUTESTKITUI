@@ -1,9 +1,12 @@
+#! /usr/bin/python3
+
 from src.databaseclass import DatabaseClass
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox
 from src.pdfAndQr import pdfAndQr
 from PyQt5.QtCore import QDate
 from src import resources
+from PyQt5.QtGui import QIcon
 import webbrowser
 import shutil
 import os
@@ -1496,7 +1499,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "MPUTester"))
         self.settingCloseButton.setText(_translate("MainWindow", "Close Settings"))
         self.editDatabaseButton.setText(_translate("MainWindow", "Edit Database"))
         self.exitAppButton.setText(_translate("MainWindow", "Exit App"))
@@ -1760,7 +1763,7 @@ class Ui_MainWindow(object):
     def poweroff(self):
         if os.path.exists("src/__pycache__"):
                 shutil.rmtree("src/__pycache__")
-        os.system("shutdown /s /t 1") 
+        os.system("shutdown now -h")
 
     def show_error_message(self,error):
         self.error_dialog = QMessageBox()
@@ -1776,5 +1779,7 @@ if __name__ == "__main__":
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
+    #icon = QIcon("/home/twintech/MPUTESTKITUI/MPUTester/supportingDocx/MPU.ico")
+    app.setWindowIcon(QtGui.QIcon("/home/twintech/MPUTESTKITUI/MPUTester/supportingDocx/MPU.ico"))
     MainWindow.show()
     sys.exit(app.exec_())
