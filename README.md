@@ -29,3 +29,26 @@ Directory Structure
 
 ![directory](https://github.com/adityakhode/MPUTESTKITUI/assets/113977001/258e708d-2368-41db-b26f-5de544325aee)
 
+
+# Frontend Design Images
+
+***
+
+* First Page
+![1](https://github.com/adityakhode/MPUTESTKITUI/assets/113977001/8dfb6013-3044-4937-8670-07d356faa532)
+
+* Settings Page
+* ![2](https://github.com/adityakhode/MPUTESTKITUI/assets/113977001/01d59a57-a629-4ce3-a88c-3c364ee5099e)
+
+* Database Page
+* ![3](https://github.com/adityakhode/MPUTESTKITUI/assets/113977001/a1f79ccf-7b37-4a15-acae-9d7ea4c845d1)
+
+* Measure Page
+  ![4](https://github.com/adityakhode/MPUTESTKITUI/assets/113977001/1531f1f0-c4a4-42a0-a93e-c260c1daec8e)
+
+* Pdf & Qr Page
+* ![5](https://github.com/adityakhode/MPUTESTKITUI/assets/113977001/896e1947-33a2-4da7-a700-0534462bbd44)
+
+
+
+
